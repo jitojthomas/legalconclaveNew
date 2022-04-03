@@ -1,0 +1,407 @@
+<!-- Page Content -->
+<div class="content" style="padding-top: 140px;">
+    <div class="container-fluid">
+
+        <div class="row">
+            
+            <!-- Profile Sidebar -->
+            <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+               <app-admin-sidebar></app-admin-sidebar>
+            </div>
+            <!-- / Profile Sidebar -->
+            
+            <div class="col-md-7 col-lg-8 col-xl-9">
+                <div class="card">
+                    <div class="card-body pt-0 pl-0 pr-0">
+                        <!-- Tab Content -->
+                       <!-- Tab Menu -->
+                        <nav class="user-tabs">
+                            <ul ngbNav #nav="ngbNav" class="nav nav-tabs nav-tabs-bottom nav-justified consultation-tab">
+                                <li ngbNavItem>
+                                  <a ngbNavLink>Phone Consultation</a>
+                                  <ng-template ngbNavContent>
+                                    <div class="card card-table mb-0">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-center mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Lawyers</th>
+                                                            <th>Appt Date</th>
+                                                            <th>Booking Date</th>
+                                                            <th class="text-center">Amount</th>
+                                                            <th>Status</th>
+                                                            <th class="text-center">Invoice</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h2 class="table-avatar">
+                                                                    <a  class="avatar avatar-sm mr-2">
+                                                                        <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                    </a>
+                                                                    <a >Ruby Perrin </a>
+                                                                </h2>
+                                                            </td>
+                                                            <td>14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
+                                                            <td>12 Nov 2019</td>
+                                                            <td class="text-center">Rs 160</td>
+                                                            <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                            <td class="text-right">
+                                                                <div class="table-action">
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                         Verify
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                        View
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                         Cancel
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                       Reschedule
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                  <a ngbNavLink>Direct Consultation</a>
+                                  <ng-template ngbNavContent>
+                                    <div class="card card-table mb-0">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-hover table-center mb-0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Lawyers</th>
+                                                            <th>Appt Date</th>
+                                                            <th>Booking Date</th>
+                                                            <th class="text-center">Amount</th>
+                                                            <th>Status</th>
+                                                            <th class="text-center">Invoice</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td>
+                                                                <h2 class="table-avatar">
+                                                                    <a  class="avatar avatar-sm mr-2">
+                                                                        <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                    </a>
+                                                                    <a >Ruby Perrin </a>
+                                                                </h2>
+                                                            </td>
+                                                            <td>14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
+                                                            <td>12 Nov 2019</td>
+                                                            <td class="text-center">Rs 160</td>
+                                                            <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                            <td class="text-right">
+                                                                <div class="table-action">
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                         Verify
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                        View
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                         Cancel
+                                                                    </a>
+                                                                    &nbsp;
+                                                                    <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                       Reschedule
+                                                                    </a>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                       
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                  </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                    <a ngbNavLink>Video Consultation</a>
+                                    <ng-template ngbNavContent>
+                                        <div class="card card-table mb-0">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Lawyers</th>
+                                                                <th>Appt Date</th>
+                                                                <th>Booking Date</th>
+                                                                <th class="text-center">Amount</th>
+                                                                <th>Status</th>
+                                                                <th class="text-center">Invoice</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a  class="avatar avatar-sm mr-2">
+                                                                            <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                        </a>
+                                                                        <a >Ruby Perrin </a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
+                                                                <td>12 Nov 2019</td>
+                                                                <td class="text-center">Rs 160</td>
+                                                                <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                                <td class="text-right">
+                                                                    <div class="table-action">
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                             Verify
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                            View
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                             Cancel
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                           Reschedule
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                    <a ngbNavLink>Email Consultation</a>
+                                    <ng-template ngbNavContent>
+                                        <div class="card card-table mb-0">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Lawyers</th>
+                                                                <th>Subject of Email</th>
+                                                                <th>E Mail</th>
+                                                                <th class="text-center">Amount</th>
+                                                                <th>Status</th>
+                                                                <th class="text-center">Invoice</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a  class="avatar avatar-sm mr-2">
+                                                                            <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                        </a>
+                                                                        <a >Ruby Perrin </a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Property Related</td>
+                                                                <td><span class="badge badge-pill bg-success-light">Unread</span></td>
+                                                                <td class="text-center">Rs 160</td>
+                                                                <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                                <td class="text-right">
+                                                                    <div class="table-action">
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                             Verify
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                            View
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                             Cancel
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                           Reschedule
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                    <a ngbNavLink>Chat Consultation</a>
+                                    <ng-template ngbNavContent>
+                                        <div class="card card-table mb-0">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Lawyers</th>
+                                                                <th>Subject of Chat</th>
+                                                                <th class="text-center">Amount</th>
+                                                                <th>Status</th>
+                                                                <th class="text-center">Invoice</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a  class="avatar avatar-sm mr-2">
+                                                                            <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                        </a>
+                                                                        <a >Ruby Perrin </a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Property Related</td>
+                                                                <td class="text-center">Rs 160</td>
+                                                                <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                                <td class="text-right">
+                                                                    <div class="table-action">
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                             Verify
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                            View
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                             Cancel
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                           Reschedule
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+                                <li ngbNavItem>
+                                    <a ngbNavLink>Free Consultation</a>
+                                    <ng-template ngbNavContent>
+                                        <div class="card card-table mb-0">
+                                            <div class="card-body">
+                                                <div class="table-responsive">
+                                                    <table class="table table-hover table-center mb-0">
+                                                        <thead>
+                                                            <tr>
+                                                                <th>Lawyers</th>
+                                                                <th>Subject of Chat</th>
+                                                                <th class="text-center">Amount</th>
+                                                                <th>Status</th>
+                                                                <th class="text-center">Invoice</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <h2 class="table-avatar">
+                                                                        <a  class="avatar avatar-sm mr-2">
+                                                                            <img class="avatar-img rounded-circle" src="assets/images/lawyer/1.png" alt="User Image">
+                                                                        </a>
+                                                                        <a >Ruby Perrin </a>
+                                                                    </h2>
+                                                                </td>
+                                                                <td>Property Related</td>
+                                                                <td class="text-center">Rs 160</td>
+                                                                <td><span class="badge badge-pill bg-success-light">Confirm</span></td>
+                                                                <td class="text-right">
+                                                                    <div class="table-action">
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-success-light">
+                                                                             Verify
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                                            View
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-danger-light">
+                                                                             Cancel
+                                                                        </a>
+                                                                        &nbsp;
+                                                                        <a href="javascript:void(0);" class="btn btn-sm bg-warning-light">
+                                                                           Reschedule
+                                                                        </a>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                           
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </ng-template>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="filter row pt-3">
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">Clients</span>&nbsp;
+                                <select>
+                                    <option></option>
+                                    <option>Ruby Perrin</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">From Date</span>&nbsp;
+                                <input type="date" style="font-size: 14px;">
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">To Date</span>&nbsp;
+                                <input type="date" style="font-size: 14px;">
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">Status</span>&nbsp;
+                                <select>
+                                    <option></option>
+                                    <option>Pending</option>
+                                    <option>Confirm</option>
+                                    <option>Cancelled</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div [ngbNavOutlet]="nav" class="tab-content tab-content pt-3 pl-3 pr-3"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>		
+<!-- /Page Content -->

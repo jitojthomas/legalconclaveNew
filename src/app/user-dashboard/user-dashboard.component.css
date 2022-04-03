@@ -1,0 +1,14 @@
+.consultation-tab li a{
+    font-size: 12px;
+}
+.consultation-tab li a.active{
+    color: #fff;
+    background-color: #2e3842;
+}
+.consultation-tab li a:hover{
+    color: #2e3842;
+    border-bottom-color: #2e3842;
+}
+.consultation-tab li a.active:hover{
+    color: #fff;
+}

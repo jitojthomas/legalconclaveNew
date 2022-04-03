@@ -1,0 +1,274 @@
+<!-- Page Content -->
+<div class="content" style="padding-top: 140px;">
+    <div class="container-fluid">
+
+        <div class="row">
+            
+            <!-- Profile Sidebar -->
+            <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+               <app-lawyer-sidebar></app-lawyer-sidebar>
+            </div>
+            <!-- / Profile Sidebar -->
+            
+            <div class="col-md-7 col-lg-8 col-xl-9">
+                <div class="card">
+                    <div class="card-body">
+                        
+                        <!-- Profile Settings Form -->
+                        <form>
+                            <div class="row form-row">
+                                <div class="col-12 col-md-12">
+                                    <div class="form-group">
+                                        <div class="change-avatar">
+                                            <div class="profile-img">
+                                                <img src="assets/images/lawyer/2.png" alt="User Image">
+                                            </div>
+                                            <div class="upload-img">
+                                                <div class="change-photo-btn">
+                                                    <span><i class="fa fa-upload"></i> Upload Photo</span>
+                                                    <input type="file" class="upload">
+                                                </div>
+                                                <small class="form-text text-muted">Allowed JPG, GIF or PNG. Max size of 2MB</small>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Name</small></label>
+                                        <input type="text" class="form-control" value="Richard">
+                                    </div>
+                                </div>
+                               
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Email ID</small></label>
+                                        <input type="email" class="form-control" value="richard@example.com">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Phone Number</small></label>
+                                        <input type="text" value="+1 202-555-0125" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Date Of Birth</small></label>
+                                        <input type="date"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <h5>Services and Specialization</h5>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small> Council Number</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small> Started At (Enter The Year)</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Law College/School You Studied At</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small> Qualification (LL.B, LL.M Etc..)</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label ><small>What Are Your Areas Of Practice In Law (Civil Law, Criminal Law, Family Law Etc..)</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Languages You Can Read, Write And Speak (Hindi, English Etc..)</small></label>
+                                        <input type="text"  class="form-control">
+                                    </div>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Are You Working With A Law Firm?</small></label>
+                                        <div class="row align-items-center">
+                                            <div class="col-2">
+                                                <div>
+                                                    <input [value]="1" [(ngModel)]="sh" name="sh" type="radio" [checked]="isChecked" /> Yes
+                                                </div>
+                                                
+                                                  <div>
+                                                    <input [value]="0" [(ngModel)]="sh" name="sh" type="radio" [checked]="!isChecked" /> No
+                                                  </div>
+                                            </div>
+                                            <div class="col-10" *ngIf="sh == 1">
+                                                <input type="text" class="form-control" placeholder="Specify The Law Firm You Are Working With ">
+                                                <small>Add multiple firms separated by a comma </small>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label><small>Preferred Legal Consultation Mode (Choose 1 Or Many)</small></label>
+                                        <div class="row align-items-center">
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <input  type="checkbox"  [value]="1" name="sh1" [(ngModel)]="sh1" [checked]="isChecked"/> <small> Direct Consultation</small> 
+                                                </div>  
+                                                  <div>
+                                                    <input  type="checkbox"  [value]="1" name="sh2" [(ngModel)]="sh2" [checked]="isChecked"/> <small> Video Consultation</small>
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <input  type="checkbox" [value]="1" name="sh3" [(ngModel)]="sh3" [checked]="isChecked"/> <small> Phone Consultation</small>
+                                                </div>  
+                                                  <div>
+                                                    <input  type="checkbox"  [value]="1" name="sh4" [(ngModel)]="sh4" [checked]="isChecked"/> <small> Email Consultation</small>
+                                                  </div>
+                                            </div>
+                                            <div class="col-sm-4">
+                                                <div>
+                                                    <input  type="checkbox"  /> <small> Free Consultation</small>
+                                                </div>  
+                                                  <div>
+                                                    <input  type="checkbox"  [value]="1" name="sh6" [(ngModel)]="sh6" [checked]="isChecked"/> <small> Chat Consultation</small>
+                                                  </div>
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row">
+                                <div class="col-12" *ngIf="sh3==1||sh1==1||sh2==1||sh4==1||sh6==1">
+                                    <h5>Pricing</h5>
+                                </div>
+                                <div class="col-6 col-md-4" *ngIf="sh3 == 1">
+                                    <div class="form-group">
+                                    <label>Phone Consultation</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4"  *ngIf="sh1 == 1">
+                                    <div class="form-group">
+                                    <label>Direct Consultation</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" *ngIf="sh2 == 1">
+                                    <div class="form-group">
+                                    <label>Video Consultation</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" *ngIf="sh4 == 1">
+                                    <div class="form-group">
+                                    <label>Email Consultation</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-4" *ngIf="sh6 == 1">
+                                    <div class="form-group">
+                                    <label>Chat Consultation</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                               
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Contact Details</h5>
+                                </div>
+                                <div class="col-12">
+                                    <div class="form-group">
+                                    <label>Address</label>
+                                        <input type="text" class="form-control" value="806 Twin Willow Lane">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>City</label>
+                                        <input type="text" class="form-control" value="Old Forge">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>State</label>
+                                        <input type="text" class="form-control" value="Newyork">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Zip Code</label>
+                                        <input type="text" class="form-control" value="13420">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Country</label>
+                                        <input type="text" class="form-control" value="United States">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h5>Bank Details</h5>
+                                </div>
+                                
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Account Holder Name</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Account Numbe</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>IFSC Code</label>
+                                        <input type="text" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <div class="form-group">
+                                        <label>Branch</label>
+                                        <input type="text" class="form-control" >
+                                    </div>
+                                </div>
+                                
+                            </div>
+                            <div class="row form-row">
+                                <div class="submit-section">
+                                    <button type="submit" class="btn btn-primary submit-btn">Save Changes</button>
+                                </div>
+                            </div>
+                        </form>
+                        <!-- /Profile Settings Form -->
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>		
+<!-- /Page Content -->

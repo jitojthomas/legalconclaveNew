@@ -1,0 +1,85 @@
+<!-- Page Content -->
+<div class="content" style="padding-top: 140px;">
+    <div class="container-fluid">
+
+        <div class="row">
+            
+            <!-- Profile Sidebar -->
+            <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+               <app-admin-sidebar></app-admin-sidebar>
+            </div>
+            <!-- / Profile Sidebar -->
+            
+            <div class="col-md-7 col-lg-8 col-xl-9">
+                <div class="card card-table">
+                    <div class="card-body">
+                        <div class="filter row pt-3 pb-3">
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">Order</span>&nbsp;
+                                <select>
+                                    <option></option>
+                                    <option>#123456</option>
+                                </select>
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">From Date</span>&nbsp;
+                                <input type="date" style="font-size: 14px;">
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">To Date</span>&nbsp;
+                                <input type="date" style="font-size: 14px;">
+                            </div>
+                            <div class="col-sm-3 text-center d-flex align-items-center justify-content-center">
+                                <span class="h6 m-0" style="font-size: 12px;">Status</span>&nbsp;
+                                <select>
+                                    <option></option>
+                                    <option>Pending</option>
+                                    <option>Confirm</option>
+                                    <option>Cancelled</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-hover table-center mb-0">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center">Order Id</th>
+                                        <th class="text-center">Orders</th>
+                                        <th class="text-center">Order Date</th>
+                                        <th class="text-center">Address</th>
+                                        <th class="text-center">Order Status</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        
+                                        <td class="text-center">PC12345</td>
+                                        
+                                        <td class="text-center">Birth Certificate</td>
+                                        <td class="text-center">14 Nov 2019 <span class="d-block text-info">10.00 AM</span></td>
+                                        <td class="text-center">#232, sector 2. HSR Layout, Bangalore
+                                        </td>                  
+                                                            
+                                        <td class="text-center">
+                                            <div class="table-action">
+                                                <a href="javascript:void(0);" class="btn btn-sm bg-info-light">
+                                                     View
+                                                </a>
+                                                &nbsp;
+                                                <span class="btn btn-sm bg-success-light">Confirm</span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>		
+<!-- /Page Content -->

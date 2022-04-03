@@ -1,0 +1,68 @@
+<!-- Popular Section -->
+<section class="section section-doctor">
+    <div class="container-fluid">
+        <div class="row align-items-center" style="justify-content: flex-end;">
+            <div class="col-lg-3">
+                <div class="section-header ">
+                    <h2>Top<br>
+                       <b>Lawyers</b> </h2>
+                </div>
+                <div class="about-content">
+                    <p>Lorem ipsum dolor sit amet, consetetur sadipscing 
+                        elitr, sed diam nonumy eirmod tempor invidunt ut 
+                        labore et dolore magna aliquyam erat, sed diam 
+                        voluptua. At vero eos et accusam et justo duo</p>
+                    <a  routerLink="lawyer">See All Lawyers</a>
+                </div>
+            </div>
+            <div class="col-lg-8">
+                
+                <div class="background-style-for-shape"></div>
+                <ngx-slick-carousel class="carousel" [config]="slideConfig">
+                    
+                    <div ngxSlickItem *ngFor="let image of images" class="slide">
+                        <div class="doctor-slider slider">
+                            <div class="profile-widget">
+                                <div class="doc-img">
+                                    <a href="doctor-profile.html">
+                                        <img class="img-fluid" alt="User Image" src="{{image.img}}">
+                                    </a>
+                                    <a href="javascript:void(0)" class="fav-btn">
+                                        <i class="far fa-bookmark"></i>
+                                    </a>
+                                </div>
+                                <div class="pro-content">
+                                    <h3 class="title">
+                                        <a href="doctor-profile.html">{{image.name}}</a> 
+                                       
+                                    </h3>
+                                    <p class="speciality">17 Years of Experienc</p>
+                                    
+                                    <h6 class="practice-area-title">Practice Areas</h6>
+                                    <p class="practice-title">Civil Laws</p>
+                                    <h6 class="practice-area-title">Bangalore / Bengaluru</h6>
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                    <div class="row row-sm">
+                                        <div class="col-6">
+                                            <a href="" class="btn view-btn">View Profile</a>
+                                        </div>
+                                        <div class="col-6">
+                                            <a href="" class="btn book-btn btn-primary">Book Now</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Popular Section -->

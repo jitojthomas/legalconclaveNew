@@ -1,0 +1,301 @@
+<!-- Home Banner -->
+<section class="section section-search home-banner-curve">
+    <div class="container-fluid">
+        <div class="row mt-5">
+            <div class="col-sm-6 d-flex align-items-center">
+                <div class="banner-wrapper">
+                    <div class="banner-header text-center">
+                        <h1 class="text-center text-white">For All Your Legal Needs</h1>
+                    </div>
+                    <!-- Search -->
+                    <div class="search-box">
+                        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                            <div class="search-background">
+                                <div class="form-group search-info">
+                                    <input type="text"  formControlName="fullname"  class="form-control"  [ngClass]="{ 'is-invalid': submitted && f['fullname'].errors }" placeholder="Search For Lawyers">
+                                    
+                                </div>
+                                <button type="submit" class="search-btn"><i class="fas fa-search"></i> <span>Search</span></button>
+                            </div>
+                        </form>
+                        
+                    </div>
+                    <div *ngIf="submitted && f['fullname'].invalid" class="alert alert-danger" style="margin: 6px 50px;padding: 5px 15px;">
+                        <span *ngIf="f['fullname'].errors && f['fullname'].errors['required']">Keyword is required.</span>
+                        <span *ngIf="f['fullname'].errors && f['fullname'].errors['minlength']">Keyword should be 3 character.</span>
+                        
+                    </div>
+                    <span class="text-white d-flex justify-content-center" style="flex-wrap: wrap;padding: 0 25px;margin-top: 12px;">
+                         
+                        <a href="" class="text-white fw-400 mr-2">Criminal Law Lawyers</a> | <a class="text-white fw-400  ml-2 mr-2">Cyber Law Lawyers</a>
+                        | <a class="text-white fw-400 ml-2 mr-2">Documentation Lawyers</a> | <br> <a class="text-white fw-400 ml-2 mr-2">Company Law</a> | <a class="text-white fw-400 ml-2 mr-2">Business Law Lawyers</a> | <a class="text-white fw-400 ml-2 mr-2">Constitutional Matters Lawyers</a>
+                    </span>
+                    <!-- /Search -->
+                    
+                </div>
+            </div>
+            <div class="col-sm-6 text-center">
+                <img src="assets/images/banner/sub-banner.png">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Home Banner -->
+<app-categories></app-categories>
+<app-top-lawyers></app-top-lawyers>
+<!-- Availabe Features -->
+<section class="section section-features">
+    <div class="container-fluid">
+       <div class="row justify-content-center align-items-center">
+            <div class="col-md-4 features-img">
+                <img src="assets/images/about.png" class="img-fluid" alt="About Us">
+            </div>
+            <div class="col-md-6">
+                <div class="section-header">	
+                    <h2 class="mt-2">About us <br><b class="text-uppercase">WHAT WE ACTUALLY DO</b></h2>
+                    <p class="text-justify">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam 
+                        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam 
+                        erat, sed diam voluptua. At vero eos et accusam et justo duo dolores 
+                        et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est 
+                        Lorem ipsum dolor sit amet. Lorem ipsum.Lorem ipsum dolor sit 
+                        amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor 
+                        invidunt ut labore et dolore magna aliquyam erat, sed diam 
+                        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. 
+                        Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum 
+                        dolor sit amet. Lorem ipsum.Lorem ipsum dolor sit amet, consetetur 
+                        sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore 
+                        et dolore magna aliquyam erat, sed diam voluptua. At vero eos et 
+                        accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren,</p>
+                </div>	
+            </div>
+       </div>
+    </div>
+</section>		
+<!-- Availabe Features -->
+<!-- How We Works for you  -->
+<section class="section section-specialities" style="background-color: #fff;">
+    <div class="container-fluid">
+        <div class="text-center">
+            <h2 class="mb-4 ctm-underline">How <b>LEGALCONCLAVE.COM</b> WORKS FOR YOU</h2>
+        </div>
+        <div class="row justify-content-center mt-5">
+            <div class="col-md-2">
+                <div class="how-works steps1">
+                    <div class="sample-icon">
+                        <img src="assets/images/works/work1.png">
+                    </div>
+                    <p>At Vero Eos Et Accusamus Et
+                        Iusto Odio Dignissimos</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="how-works step2">
+                    <div class="sample-icon">
+                        <img src="assets/images/works/work2.png">
+                    </div>
+                    <p>At Vero Eos Et Accusamus Et
+                        Iusto Odio Dignissimos</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="how-works step3">
+                    <div class="sample-icon">
+                        <img src="assets/images/works/work3.png">
+                    </div>
+                    <p>At Vero Eos Et Accusamus Et
+                        Iusto Odio Dignissimos</p>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="how-works step4">
+                    <div class="sample-icon">
+                        <img src="assets/images/works/work4.png">
+                    </div>
+                    <p>At Vero Eos Et Accusamus Et
+                        Iusto Odio Dignissimos</p>
+                </div>
+            </div>
+        </div>
+    </div>  
+</section>
+<!-- How We Works for you  -->
+<!-- Testimonial -->
+<section class="section section-specialities">
+    <div class="container-fluid">
+        <div class="text-center">
+            <h2 class="mb-4 ctm-underline">What Our Client <b>Says</b></h2>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-10">
+                <ngx-slick-carousel class="carousel testimonial" [config]="slideConfig1">
+                    <div ngxSlickItem class="slide">
+                        <div class="doctor-slider slider">
+                            <div class="profile-widget">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid rounded-circle" alt="User Image" src="assets/images/lawyer/1.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h6 class="title">
+                                            Adam Gillworm
+                                        </h6>
+                                        <div class="rating">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <p class="text-justify">At Vero Eos Et Accusamus Et Iusto Odio
+                                        Dignissimos Ducimus Qui Blanditiis
+                                        Praesentium Voluptatum Deleniti Qui
+                                        Blanditiis Praesentium Voluptatum Deleniti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class="doctor-slider slider">
+                            <div class="profile-widget">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid rounded-circle" alt="User Image" src="assets/images/lawyer/1.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h6 class="title">
+                                            Adam Gillworm
+                                        </h6>
+                                        <div class="rating">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <p class="text-justify">At Vero Eos Et Accusamus Et Iusto Odio
+                                        Dignissimos Ducimus Qui Blanditiis
+                                        Praesentium Voluptatum Deleniti Qui
+                                        Blanditiis Praesentium Voluptatum Deleniti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class="doctor-slider slider">
+                            <div class="profile-widget">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid rounded-circle" alt="User Image" src="assets/images/lawyer/1.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h6 class="title">
+                                            Adam Gillworm
+                                        </h6>
+                                        <div class="rating">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <p class="text-justify">At Vero Eos Et Accusamus Et Iusto Odio
+                                        Dignissimos Ducimus Qui Blanditiis
+                                        Praesentium Voluptatum Deleniti Qui
+                                        Blanditiis Praesentium Voluptatum Deleniti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div ngxSlickItem class="slide">
+                        <div class="doctor-slider slider">
+                            <div class="profile-widget">
+                                <div class="row align-items-center">
+                                    <div class="col-sm-3">
+                                        <img class="img-fluid rounded-circle" alt="User Image" src="assets/images/lawyer/1.png">
+                                    </div>
+                                    <div class="col-sm-9">
+                                        <h6 class="title">
+                                            Adam Gillworm
+                                        </h6>
+                                        <div class="rating">
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star filled"></i>
+                                            <i class="fas fa-star "></i>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pro-content">
+                                    <p class="text-justify">At Vero Eos Et Accusamus Et Iusto Odio
+                                        Dignissimos Ducimus Qui Blanditiis
+                                        Praesentium Voluptatum Deleniti Qui
+                                        Blanditiis Praesentium Voluptatum Deleniti</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ngx-slick-carousel>
+            </div>
+        </div>
+    </div>  
+</section>
+<!-- Testimonial  -->
+<!-- top articles  -->
+<section class="section section-specialities" style="background-color: #fff;">
+    <div class="container-fluid">
+        <div class="text-center">
+            <h2 class="mb-4 ctm-underline">Read top articles from <b>Law Experts</b></h2>
+        </div>
+        <div class="row justify-content-center text-center">
+            <div class="col-10 col-sm-5"><p>Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's 
+                standard dummy text ever since the 1500s</p></div>
+        </div>
+        <div class="row justify-content-center mt-4">
+            <div class="col-md-3">
+                <div class="top-articles">
+                    <div class="article-img">
+                        <img src="assets/images/articles/articles1.png">
+                    </div>
+                    <div class="article-title">Does Demonetization Break Any 
+                        Indian Law ?</div>
+                    <p>Author : Sugandha Sehgal</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="top-articles">
+                    <div class="article-img">
+                        <img src="assets/images/articles/articles2.png" >
+                    </div>
+                    <div class="article-title">Does Demonetization Break Any 
+                        Indian Law ?</div>
+                    <p>Author : Sugandha Sehgal</p>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="top-articles">
+                    <div class="article-img">
+                        <img src="assets/images/articles/articles1.png">
+                    </div>
+                    <div class="article-title">Does Demonetization Break Any 
+                        Indian Law ?</div>
+                    <p>Author : Sugandha Sehgal</p>
+                </div>
+            </div>
+        </div>
+        <div class="text-center about-content mt-3">
+            <a routerLink="blog"  class="mt-0">See all articles</a>
+        </div>
+    </div>  
+</section>
+<!-- top articles  -->

@@ -1,0 +1,208 @@
+<!-- Page Content -->
+<div class="content" style="padding-top: 140px;">
+    <div class="container-fluid">
+
+        <div class="row">
+            
+            <!-- Profile Sidebar -->
+            <div class="col-md-5 col-lg-4 col-xl-3 theiaStickySidebar">
+               <app-user-sidebar></app-user-sidebar>
+            </div>
+            <!-- / Profile Sidebar -->
+            
+            <div class="col-md-7 col-lg-8 col-xl-9">
+                <div class="card">
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-xl-12">
+                                <div class="chat-window">
+                                
+                                    <!-- Chat Left -->
+                                    <div class="chat-cont-left">
+                                        <div class="chat-header">
+                                            <a [routerLink]="['/user-email-compose']" class="btn btn-success compose-button"><i class="fas fa-paper-plane"></i> Compose Mail</a>
+                                        </div>
+                                        <div class="chat-users-list">
+                                            <ul ngbNav #nav="ngbNav" class="nav nav-tabs nav-tabs-bottom nav-justified">
+                                                <li ngbNavItem>
+                                                  <a ngbNavLink>Inbox</a>
+                                                  <ng-template ngbNavContent>
+                                                    <div class="chat-scroll">
+                                                        <a href="javascript:void(0);" class="media">
+                                                            <div class="media-img-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <div>
+                                                                    <div class="user-name">Adv. Ruby Perrin</div>
+                                                                    <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                        non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                        volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="last-chat-time block">2 min</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="media">
+                                                            <div class="media-img-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <div>
+                                                                    <div class="user-name">Adv. Ruby Perrin</div>
+                                                                    <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                        non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                        volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="last-chat-time block">2 min</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                        <a href="javascript:void(0);" class="media">
+                                                            <div class="media-img-wrap">
+                                                                <div class="avatar">
+                                                                    <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                                </div>
+                                                            </div>
+                                                            <div class="media-body">
+                                                                <div>
+                                                                    <div class="user-name">Adv. Ruby Perrin</div>
+                                                                    <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                        non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                        volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                                </div>
+                                                                <div>
+                                                                    <div class="last-chat-time block">2 min</div>
+                                                                </div>
+                                                            </div>
+                                                        </a>
+                                                    </div>
+                                                  </ng-template>
+                                                </li>
+                                                <li ngbNavItem>
+                                                  <a ngbNavLink>Outbox</a>
+                                                  <ng-template ngbNavContent><div class="chat-scroll">
+                                                    <a href="javascript:void(0);" class="media">
+                                                        <div class="media-img-wrap">
+                                                            <div class="avatar">
+                                                                <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div>
+                                                                <div class="user-name">Adv. Ruby Perrin</div>
+                                                                <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                    non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                    volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="last-chat-time block">2 min</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="media">
+                                                        <div class="media-img-wrap">
+                                                            <div class="avatar">
+                                                                <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div>
+                                                                <div class="user-name">Adv. Ruby Perrin</div>
+                                                                <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                    non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                    volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="last-chat-time block">2 min</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="javascript:void(0);" class="media">
+                                                        <div class="media-img-wrap">
+                                                            <div class="avatar">
+                                                                <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                            </div>
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <div>
+                                                                <div class="user-name">Adv. Ruby Perrin</div>
+                                                                <div class="user-last-chat">Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac
+                                                                    non augue. Aenean ornare sit amet lectus non tristique. Nunc ut
+                                                                    volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet,</div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="last-chat-time block">2 min</div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div></ng-template>
+                                                </li>
+                                              </ul>
+                                              <div [ngbNavOutlet]="nav"></div>
+                                            
+                                        </div>
+                                    </div>
+                                    <!-- /Chat Left -->
+                                
+                                    <!-- Chat Right -->
+                                    <div class="chat-cont-right">
+                                        <div class="chat-header">
+                                            <a id="back_user_list" href="javascript:void(0)" class="back-user-list">
+                                                <i class="material-icons">chevron_left</i>
+                                            </a>
+                                            <div class="media">
+                                                <div class="media-img-wrap">
+                                                    <div class="avatar ">
+                                                        <img src="assets/images/lawyer/1.png" alt="User Image" class="avatar-img rounded-circle">
+                                                    </div>
+                                                </div>
+                                                <div class="media-body">
+                                                    <div class="user-name">Adv. Darren Elder</div>
+                                                    <div class="user-status">11.00 am, 12/12/2021</div>
+                                                   
+                                                </div>
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        <div  class="text-justify pt-3" style="margin-left:80px; ">
+                                            <p>Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet lectus
+                                                non tristique. Nunc ut volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet, eleifend fermentum est.
+                                                Quisque nibh justo, congue ut erat at, aliquet efficitur purus. Integer venenatis odio vitae orci efficitur mollis.
+                                                Donec ultrices diam dictum dignissim vestibulum. Proin eleifend nunc nunc. Sed non arcu eget lorem viverra
+                                                sodales.Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet
+                                                lectus non tristique. Nunc ut volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet, eleifend fermentum est.
+                                                Quisque nibh justo, congue ut erat at, aliquet efficitur purus. Integer venenatis odio vitae orci efficitur mollis.
+                                                Donec ultrices diam dictum dignissim vestibulum. Proin eleifend nunc nunc. Sed non arcu eget lorem viverra
+                                                sodales.Aenean sed lorem est. Sed quis neque ut nibh suscipit imperdiet ac non augue. Aenean ornare sit amet
+                                                lectus non tristique. Nunc ut volutpat lectus. Nulla velit augue, pulvinar sed nisi sit amet, eleifend fermentum est.
+                                                Quisque nibh justo, congue ut erat at, aliquet efficitur purus. Integer venenatis odio vitae orci efficitur mollis.
+                                                Donec ultrices diam dictum dignissim vestibulum. Proin eleifend nunc nunc. Sed non arcu eget lorem viverra
+                                                sodales.</p>
+                                                <div class="submit-section">
+                                                    <button type="submit" class="btn btn-primary submit-btn">Reply</button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                    <!-- /Chat Right -->
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        <!-- /Row -->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</div>		
+<!-- /Page Content -->
